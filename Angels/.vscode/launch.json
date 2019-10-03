@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Interface",
+            "request": "launch",
+            "mainClass": "ui.Interface"
+        }
+    ]
+}
