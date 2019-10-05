@@ -4,14 +4,14 @@ package model;
  * <b> DES: </b> the next class instance attributes of an angel, creating its constructor methods and modifiers.<br>
  * @author kevin Andrés Fernández Nougera.<br>
  * @version 1.0
- * @
  */
 public class Angel{
 
+	private Candle candle;
 	////////////////////////////////////////////////////////////////////////////
 	
 	private String power;
-	private Candle candle;
+	
 	private String name;
 	private String picture;
 	private String prayer;
@@ -41,6 +41,7 @@ public class Angel{
 		this.candle = candle;
 	}
 	
+
 	/**
 	 * @return the candle
 	 */
