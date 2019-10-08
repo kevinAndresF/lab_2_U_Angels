@@ -86,14 +86,14 @@ public class Legion{
 	public String createAngel(String name, String picture, String prayer, String power, String month, int day, Candle candle) {
 		String message = "angel no se creo, por fallos cuando ingreso los datos";
 		if(valueNameEL(name)==true && valuePower(power)==true && valueName(name)==true) {
-			Angel angels = new Angel(name, picture, prayer, power, month, day, candle); 
+			Angel angels1 = new Angel(name, picture, prayer, power, month, day, candle); 
+			angels.add(angels1);
 			message = "angel fue creado, correctamente";
 			
 		}
 		
 		return message;
     }
-	
 	
 	/**
 	 * <b> DES: </b> este método elimina el ángel de acuerdo con un nombre ingresado.<br>
@@ -116,8 +116,7 @@ public class Legion{
 		
 		return message;
 		
-	}
-	
+	}	
 
 	/**
 	 * <b> DES: </b> calculates the number of angels created.<br>
@@ -197,7 +196,7 @@ public class Legion{
 	 * @return all the celebrations of one month.<br>
 	 */
 	public String getInformationCelebration(String month) {
-		String information = "Mes no encontrado";
+		String information = "Mes no encontrado, o no hay celebraciones";
         for(int i=0; i<= angels.size();i++) {
 			
 			String monthPositioni =  angels.get(i).getMonth();
